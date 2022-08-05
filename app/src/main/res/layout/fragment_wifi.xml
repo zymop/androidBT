@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WifiFragment">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:layout_marginTop="270dp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/labelW0"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Wifi Setting"
+                        android:textSize="25sp"
+                        tools:layout_editor_absoluteX="15dp"
+                        tools:layout_editor_absoluteY="49dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/labelW1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="SSID"
+                        tools:layout_editor_absoluteX="15dp"
+                        tools:layout_editor_absoluteY="49dp" />
+
+                    <EditText
+                        android:id="@+id/textInputW1"
+                        android:layout_width="250dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="40dp"
+                        android:ems="10"
+                        android:inputType="textPersonName" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/labelW2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="PIN"
+                        tools:layout_editor_absoluteX="15dp"
+                        tools:layout_editor_absoluteY="49dp" />
+
+                    <EditText
+                        android:id="@+id/textInputW2"
+                        android:layout_width="250dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="50dp"
+                        android:ems="10"
+                        android:inputType="textPersonName" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/buttonWSet"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_marginStart="250dp"
+                        android:text="SET"
+                        tools:layout_editor_absoluteX="259dp"
+                        tools:layout_editor_absoluteY="79dp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </ScrollView>>
+
+    </RelativeLayout>
+
+</FrameLayout>

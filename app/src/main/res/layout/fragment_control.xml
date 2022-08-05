@@ -1,0 +1,432 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ControlFragment">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:layout_marginTop="270dp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/labelC0"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Control"
+                        android:textSize="25sp"
+                        tools:layout_editor_absoluteX="15dp"
+                        tools:layout_editor_absoluteY="49dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/labelPot"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="MON POT"
+                        android:textSize="20sp"
+                        tools:layout_editor_absoluteX="15dp"
+                        tools:layout_editor_absoluteY="49dp" />
+
+                    <Button
+                        android:id="@+id/buttonPotOn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ON"
+                        android:layout_marginStart="80dp"
+                        tools:layout_editor_absoluteX="15dp"
+                        tools:layout_editor_absoluteY="49dp" />
+
+                    <Button
+                        android:id="@+id/buttonPotOff"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="OFF"
+                        android:layout_marginStart="20dp"
+                        tools:layout_editor_absoluteX="15dp"
+                        tools:layout_editor_absoluteY="49dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/labelPush"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="MON PUSH BUT"
+                        android:textSize="20sp"
+                        tools:layout_editor_absoluteX="15dp"
+                        tools:layout_editor_absoluteY="49dp" />
+
+                    <Button
+                        android:id="@+id/buttonPushOn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ON"
+                        android:layout_marginStart="24dp"
+                        tools:layout_editor_absoluteX="15dp"
+                        tools:layout_editor_absoluteY="49dp" />
+
+                    <Button
+                        android:id="@+id/buttonPushOff"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="OFF"
+                        android:layout_marginStart="20dp"
+                        tools:layout_editor_absoluteX="15dp"
+                        tools:layout_editor_absoluteY="49dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/labelLed"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="RED LED"
+                        android:textSize="20sp"
+                        tools:layout_editor_absoluteX="15dp"
+                        tools:layout_editor_absoluteY="49dp" />
+
+                    <Button
+                        android:id="@+id/buttonLedOn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ON"
+                        android:layout_marginStart="90dp"
+                        tools:layout_editor_absoluteX="15dp"
+                        tools:layout_editor_absoluteY="49dp" />
+
+                    <Button
+                        android:id="@+id/buttonLedOff"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="OFF"
+                        android:layout_marginStart="20dp"
+                        tools:layout_editor_absoluteX="15dp"
+                        tools:layout_editor_absoluteY="49dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/labelMotor"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="STEP MOTOR"
+                        android:textSize="20sp"
+                        tools:layout_editor_absoluteX="15dp"
+                        tools:layout_editor_absoluteY="49dp" />
+
+                    <Button
+                        android:id="@+id/buttonMotorOn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ON"
+                        android:layout_marginStart="48dp"
+                        tools:layout_editor_absoluteX="15dp"
+                        tools:layout_editor_absoluteY="49dp" />
+
+                    <Button
+                        android:id="@+id/buttonMotorOff"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:text="OFF"
+                        android:textColorLink="#FFFFFF"
+                        tools:layout_editor_absoluteX="15dp"
+                        tools:layout_editor_absoluteY="49dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/labelCont1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="CONT TOGGLE"
+                        android:textSize="20sp"
+                        tools:layout_editor_absoluteX="15dp"
+                        tools:layout_editor_absoluteY="49dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/labelTLED"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="RED LED"
+                        android:textSize="20sp"
+                        tools:layout_editor_absoluteX="15dp"
+                        tools:layout_editor_absoluteY="49dp" />
+
+                    <Button
+                        android:id="@+id/buttonTLedOn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="90dp"
+                        android:background="#190C0A0A"
+                        android:text="ON"
+                        tools:layout_editor_absoluteX="15dp"
+                        tools:layout_editor_absoluteY="49dp" />
+
+                    <Button
+                        android:id="@+id/buttonTLedOff"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:background="#190C0A0A"
+                        android:text="OFF"
+                        tools:layout_editor_absoluteX="15dp"
+                        tools:layout_editor_absoluteY="49dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/labelCont2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="CONT TOGGLE"
+                        android:textSize="20sp"
+                        tools:layout_editor_absoluteX="15dp"
+                        tools:layout_editor_absoluteY="49dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/labelDigital"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ALL DIGITALS"
+                        android:textSize="20sp"
+                        tools:layout_editor_absoluteX="15dp"
+                        tools:layout_editor_absoluteY="49dp" />
+
+                    <Button
+                        android:id="@+id/buttonDigitalOn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="43dp"
+                        android:background="#190C0A0A"
+                        android:text="ON"
+                        tools:layout_editor_absoluteX="15dp"
+                        tools:layout_editor_absoluteY="49dp" />
+
+                    <Button
+                        android:id="@+id/buttonDigitalOff"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:background="#190C0A0A"
+                        android:text="OFF"
+                        tools:layout_editor_absoluteX="15dp"
+                        tools:layout_editor_absoluteY="49dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/labelCont3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="CONT TOGGLE"
+                        android:textSize="20sp"
+                        tools:layout_editor_absoluteX="15dp"
+                        tools:layout_editor_absoluteY="49dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/labelRelay"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ALL RELAYS"
+                        android:textSize="20sp"
+                        tools:layout_editor_absoluteX="15dp"
+                        tools:layout_editor_absoluteY="49dp" />
+
+                    <Button
+                        android:id="@+id/buttonRelayOn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="55dp"
+                        android:background="#190C0A0A"
+                        android:text="ON"
+                        tools:layout_editor_absoluteX="15dp"
+                        tools:layout_editor_absoluteY="49dp" />
+
+                    <Button
+                        android:id="@+id/buttonRelayOff"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:background="#190C0A0A"
+                        android:text="OFF"
+                        tools:layout_editor_absoluteX="15dp"
+                        tools:layout_editor_absoluteY="49dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/labelCont4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="CONT TOGGLE"
+                        android:textSize="20sp"
+                        tools:layout_editor_absoluteX="15dp"
+                        tools:layout_editor_absoluteY="49dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/labelSensor"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ALL Sensors"
+                        android:textSize="20sp"
+                        tools:layout_editor_absoluteX="15dp"
+                        tools:layout_editor_absoluteY="49dp" />
+
+                    <Button
+                        android:id="@+id/buttonSensorOn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="55dp"
+                        android:background="#190C0A0A"
+                        android:text="ON"
+                        tools:layout_editor_absoluteX="15dp"
+                        tools:layout_editor_absoluteY="49dp" />
+
+                    <Button
+                        android:id="@+id/buttonSensorOff"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:background="#190C0A0A"
+                        android:text="OFF"
+                        tools:layout_editor_absoluteX="15dp"
+                        tools:layout_editor_absoluteY="49dp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </ScrollView>>
+
+    </RelativeLayout>
+
+</FrameLayout>
